@@ -1,0 +1,60 @@
+{
+  "requirements": [
+    {
+      "bonus": false,
+      "description": "1 - Adicione no seu site um título com o nome do seu jogo",
+      "enabled": true,
+      "identifier": null,
+      "order": 1,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "2 - Adicione um texto com o código RGB a ser adivinhado",
+      "enabled": true,
+      "identifier": null,
+      "order": 2,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "3 - Adicione à página opções de cores para serem adivinhadas",
+      "enabled": true,
+      "identifier": null,
+      "order": 3,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "4 - Adicione cores aos círculos, que devem ser geradas dinamicamente",
+      "enabled": true,
+      "identifier": null,
+      "order": 4,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "5 - Ao clicar em um círculo colorido, deve ser mostrado um texto indicando se está correto",
+      "enabled": true,
+      "identifier": null,
+      "order": 5,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "6 - Crie um botão para iniciar/reiniciar o jogo",
+      "enabled": true,
+      "identifier": null,
+      "order": 6,
+      "skill_ids": []
+    },
+    {
+      "bonus": true,
+      "description": "7 - Crie um placar que incremente 3 pontos para cada acerto no jogo",
+      "enabled": true,
+      "identifier": null,
+      "order": 7,
+      "skill_ids": []
+    }
+  ]
+}
