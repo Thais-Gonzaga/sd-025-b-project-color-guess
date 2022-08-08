@@ -18,10 +18,18 @@ const divCircle = document.createElement('div');
 divCircle.id = 'conteiner-circle';
 main.appendChild(divCircle);
 
+function random() {
+  const random1 = Math.round(Math.random() * 16).toString(16);
+  const random2 = Math.round(Math.random() * 16).toString(16);
+  const random3 = Math.round(Math.random() * 16).toString(16);
+  return `#${random1}${random2}${random3}`;
+}
+
 function createDiv() {
   for (let index = 1; index <= 6; index += 1) {
     const div = document.createElement('div');
     div.classList.add('ball');
+    div.style.background = random();
     divCircle.appendChild(div);
   }
 }

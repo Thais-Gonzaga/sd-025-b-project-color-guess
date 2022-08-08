@@ -7,12 +7,10 @@
   margin-left: 20px;
 }
 
-#rgb-color, h1 {
+#rgb-color , h1 {
   text-align: center;
 }
 
 #conteiner-circle {
   margin-left: 400px;
-  width: 35%;
-  border: 1px solid black;
 }
