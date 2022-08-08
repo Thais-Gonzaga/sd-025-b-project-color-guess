@@ -13,3 +13,16 @@ const p = document.createElement('p');
 p.id = 'rgb-color';
 p.innerText = 'rgb(168, 34, 1)';
 main.appendChild(p);
+
+const divCircle = document.createElement('div');
+divCircle.id = 'conteiner-circle';
+main.appendChild(divCircle);
+
+function createDiv() {
+  for (let index = 1; index <= 6; index += 1) {
+    const div = document.createElement('div');
+    div.classList.add('ball');
+    divCircle.appendChild(div);
+  }
+}
+createDiv();
