@@ -11,12 +11,16 @@ document.body.appendChild(main);
 
 const p = document.createElement('p');
 p.id = 'rgb-color';
-p.innerText = 'rgb(168, 34, 1)';
 main.appendChild(p);
 
 const divCircle = document.createElement('div');
 divCircle.id = 'conteiner-circle';
 main.appendChild(divCircle);
+
+const elementp = document.createElement('p');
+elementp.id = 'answer';
+elementp.innerText = 'Escolha uma cor';
+main.appendChild(elementp);
 
 function random() {
   const random1 = Math.round(Math.random() * 16).toString(16);
@@ -25,12 +29,24 @@ function random() {
   return `#${random1}${random2}${random3}`;
 }
 
+function checkColor(event) {
+  const clickColor = event.target.style.background;
+  if (clickColor === p.innerText) elementp.innerText = 'Acertou!';
+  if (clickColor !== p.innerText) elementp.innerText = 'Errou! Tente novamente!';
+}
+
 function createDiv() {
   for (let index = 1; index <= 6; index += 1) {
     const div = document.createElement('div');
     div.classList.add('ball');
     div.style.background = random();
     divCircle.appendChild(div);
+    div.addEventListener('click', checkColor);
   }
+  const ball = document.querySelectorAll('.ball');
+  const sort = Math.round(Math.random() * 5);
+  p.innerText = ball[sort].style.background;
+  console.log(ball[sort]);
+  console.log(sort);
 }
 createDiv();
